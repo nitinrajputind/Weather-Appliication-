@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Application</title>
+
+    <!-- External StyleSheet  -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Font Awesome CDN  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="searchBox">
+            <i class="fa-solid fa-location-dot"></i>
+            <input type="text" placeholder="Enter A City Name">
+            <button class="fa-sharp fa-solid fa-magnifying-glass"></button>
+        </div>
+
+        <!-- When the Location is not Found  -->
+        <div class="notFound">
+            <img src="./image/404.png" alt="Not Found">
+            <p>Opps! Invalid locatioon : </p>
+        </div>
+
+        <!-- When the Location is found  -->
+        <div class="weatherBox">
+            <img src="" alt="Weather">
+            <p class="temprature"></p>
+            <p class="description"></p>
+        </div>
+
+        <!-- Weather details  -->
+        <div class="weaterDetails">
+            <div class="humidity">
+                <i class="fa-solid fa-water"></i>
+                <div class="text">
+                    <span></span>
+                    <p>Humidity</p>
+                </div>
+            </div>
+
+            <div class="Wind">
+                <i class="fa-solid fa-wind"></i>
+                <div class="text">
+                    <span></span>
+                    <p>Wind Speed</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+     <script src="./script.js"></script>
+</body>
+</html>

@@ -49,15 +49,20 @@ search.addEventListener("click", () => {
           image.src = "./image/cloud.png";
           break;
 
-        case "Mist":
+        case "Haze":
           image.src = "./image/mist.png";
           break;
+
+        case "Mist" :
+            image.src = "./image/mist.png";
+            break;
 
         default :
             image.src = "";
       }
 
       temprature.innerHTML = `${parseInt(json.main.temp)}<span>°C</span>`;
+      description.innerHTML = `${json.weather[0].description}`
       humidity.innerHTML = `${json.main.humidity}%`;
       wind.innerHTML = `${parseInt(json.wind.speed)}Km/h`;
       
